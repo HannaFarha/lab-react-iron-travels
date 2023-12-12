@@ -1,10 +1,17 @@
 import travelPlansData from "../assets/travel-plans.json";
+import React, { useState } from "react";
 import "../App.css";
 
 function TravelList() {
+  const [travelPlans, setTravelPlans] = useState(travelPlansData);
+
+  const handleDelete = (currentId) => {
+    setTravelPlans(travelPlans.filter((plan) => plan.id !== currentId));
+  };
+
   return (
     <div className="listCtn">
-      {travelPlansData.map((plan) => (
+      {travelPlans.map((plan) => (
         <div key={plan.id} className="container">
           <div className="imageCtn">
             <img src={plan.image} alt="image" />
@@ -35,6 +42,9 @@ function TravelList() {
                 </span>
               )}
             </div>
+            <button type="button" onClick={() => handleDelete(plan.id)}>
+              Delete
+            </button>
           </div>
         </div>
       ))}
