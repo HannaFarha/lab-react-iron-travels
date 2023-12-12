@@ -36,3 +36,28 @@
 .text-iron {
   color: #0a035a;
 }
+
+.imageCtn img {
+  width: 250px;
+  margin: 3rem;
+}
+.container {
+  border: 1px solid black;
+  display: flex;
+  width: 45vw;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.textCtn {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 1.3rem;
+  text-align: left;
+}
+.listCtn {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
