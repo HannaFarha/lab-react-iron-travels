@@ -17,6 +17,8 @@ function TravelList() {
             <p>
               <strong>Price:</strong> {plan.totalCost}
             </p>
+            <button>delete</button>
+            
           </div>
         </div>
       ))}
