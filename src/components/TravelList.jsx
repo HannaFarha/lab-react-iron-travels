@@ -17,6 +17,24 @@ function TravelList() {
             <p>
               <strong>Price:</strong> {plan.totalCost}
             </p>
+
+            <div className="coloredCtn">
+              {plan.totalCost < 350 && (
+                <span className="GDLabel">
+                  <p>Great Deal</p>
+                </span>
+              )}
+              {plan.totalCost > 1500 && (
+                <span className="PLabel">
+                  <p>Premium</p>
+                </span>
+              )}
+              {plan.allInclusive && (
+                <span className="AILabel">
+                  <p>All-Inclusive</p>
+                </span>
+              )}
+            </div>
           </div>
         </div>
       ))}

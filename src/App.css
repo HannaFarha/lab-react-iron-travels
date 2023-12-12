@@ -38,7 +38,7 @@
 }
 
 .imageCtn img {
-  width: 250px;
+  width: 350px;
   margin: 3rem;
 }
 .container {
@@ -49,10 +49,8 @@
   margin-top: 20px;
 }
 .textCtn {
-  display: flex;
-  flex-direction: column;
-
-  font-size: 1.3rem;
+  display: black;
+  font-size: 1.2rem;
   text-align: left;
 }
 .listCtn {
@@ -60,4 +58,30 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
+}
+.coloredCtn {
+  display: flex;
+  flex-direction: row;
+}
+.GDLabel,
+.AILabel,
+.PLabel {
+  height: 3rem;
+  width: 150px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0;
+  color: white;
+  gap: 20px;
+}
+.GDLabel {
+  background-color: green;
+  border-radius: 15px;
+}
+.AILabel,
+.PLabel {
+  background-color: cornflowerblue;
+  border-radius: 15px;
 }
